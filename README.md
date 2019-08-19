@@ -1,29 +1,18 @@
 nglpy
 =====
 
-.. introduction
-
 A Python wrapped version of the [Neighborhood Graph Library
 (NGL_) developed by Carlos Correa and Peter Lindstrom.
 
-.. _NGL: http://www.ngraph.org/
-
-.. LONG_DESCRIPTION
+http://www.ngraph.org/
 
 NGLPY but modified to generate relative neighborhood graphs in a python environment.
-
-.. END_LONG_DESCRIPTION
-
-.. end_introduction
-
-.. install
 
 Modified Installation
 ============
 
 Must get the most up-to-date xcode and commandline tools 
 
-::
 
     sudo rm -rf /Library/Developer/CommandLineTools
     
@@ -33,9 +22,6 @@ Must get the most up-to-date xcode and commandline tools
     
     pip install . 
 
-.. end-install
-
-.. usage
 
 Usage
 =====
@@ -55,5 +41,3 @@ Then you can use the library from python such as the example below::
     aGraph = nglpy.Graph(point_set, graph_type, max_neighbors, beta)
 
     aGraph.neighbors()
-
-.. end-usage
