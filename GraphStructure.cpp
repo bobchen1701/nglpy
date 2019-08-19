@@ -85,6 +85,12 @@ void GraphStructure<T>::compute_neighborhood(std::vector<int> &edgeIndices,
   graphAlgorithms["relaxed beta skeleton"] = ngl::getRelaxedBSkeleton<T>;
   graphAlgorithms["diamond graph"]         = ngl::getDiamondGraph<T>;
   graphAlgorithms["relaxed diamond graph"] = ngl::getRelaxedDiamondGraph<T>;
+  graphAlgorithms["relative neighbor graph"] = ngl::getRelativeNeighborGraph<T>;
+  graphAlgorithms["relaxed relative neighbor graph"] = ngl::getRelaxedRelativeNeighborGraph<T>;
+  graphAlgorithms["gabriel graph"] = ngl::getGabrielGraph<T>;
+  graphAlgorithms["relaxed gabriel graph"] = ngl::getRelaxedGabrielGraph<T>;
+  
+  //
   //As it turns out, NGL's KNN graph assumes the input data is a KNN and so, is
   // actually just a pass through method that passes every input edge. We can
   // leverage this to accept "none" graphs.
