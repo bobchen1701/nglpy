@@ -55,9 +55,13 @@ Modified Installation
 Must get the most up-to-date xcode and commandline tools 
 
 ::
+
     sudo rm -rf /Library/Developer/CommandLineTools
+    
     xcode-select --install
+    
     sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+    
     pip install . 
 
 .. end-install
